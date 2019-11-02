@@ -7,6 +7,9 @@ body{
     background-color: #ddd;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url(../Images/triangle-mosaic.png);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .bg-white {
@@ -16,8 +19,6 @@ body{
 
 .bg-teal {
     background-color: #4aaaa5;
-    /* height: 100%;
-    margin: auto; */
 }
 
 h1 {
@@ -33,11 +34,11 @@ h2 {
     font-size: 34px;
     font-weight: bolder;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-    padding: 15px;
 }
 
 h4 {
     color: #fff;
+    /* text-align: center; */
     font-size: 16px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
@@ -55,6 +56,12 @@ h4 {
     font-weight: bolder;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     border-bottom: none;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: 45vh;
+    object-fit: cover;
 }
 
 ul {
@@ -80,6 +87,10 @@ li a {
     text-decoration: none;
     color: #777;
     font-size: 16px;
+}
+
+.container {
+    flex: 1;
 }
 
 .main-content{
@@ -109,18 +120,11 @@ li a {
     border-radius: 0px;
 }
 
-.gameLabel{
-    color: #fff;
-    background-color: #4aaaa5;
-    text-align: center;
-    bottom: 20%;
-    width: 92%;
-}
-
 .carousel-caption {
     max-width: 100%;
     width:100%;
    }
+  
 
 footer{
     height: 60px;
@@ -130,3 +134,10 @@ footer{
     font-size: 10px;
     color: #fff;
 }
+
+@media only screen and (max-width: 480px) {
+   .navbar {
+       padding-left: 0 important!;
+       padding-right: 0 important!;
+   }
+} 
