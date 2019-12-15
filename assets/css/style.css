@@ -1,12 +1,14 @@
-/*Abby Kuranz Portfolio*/
+/*Abby C. Kuranz Portfolio*/
 
 body {
   color: #777;
+  font-size: 20px;
   height: 100%;
   line-height: 2;
   background-color: #fff;
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-  /* background-image: url(../images/triangle-mosaic.png); */
+  background-image: url(../images/BackgroundImages/kayle-kaupanger-_JOupCumElE-unsplash_backgroundImage_2500.jpg);
+  /* opacity: 0.5; */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -41,6 +43,16 @@ h4 {
   /* font-family: "Georgia", Times, "Times New Roman", serif; */
 }
 
+i {
+  color: #00a08d;
+}
+
+.navbar-light,
+.navbar-nav,
+.nav-link {
+  color: #ffffff !important;
+}
+
 .bg-white {
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
@@ -48,16 +60,18 @@ h4 {
 
 .bg-teal {
   background-color: #00a08d;
+  opacity: 0.8;
 }
 
 .card {
   margin-top: 25px;
   border-radius: 0px;
+  border: none;
 }
 
 .card-header {
   color: #00a08d;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 34px;
   font-weight: bolder;
   /* font-family: "Georgia", Times, "Times New Roman", serif; */
@@ -68,6 +82,11 @@ h4 {
   max-width: 100%;
   height: 45vh;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.card-img-top:hover {
+  transform: scale(0.95);
 }
 
 ul {
@@ -78,7 +97,8 @@ ul {
 
 li {
   text-align: center;
-  border-right: 1px solid #77777730;
+  color: #fff;
+  border-right: 1px solid #ffffff;
   display: inline;
   padding: 0px 10px 0px 10px;
 }
@@ -90,8 +110,8 @@ li:last-child {
 
 li a {
   text-decoration: none;
-  color: #777;
   font-size: 16px;
+  color: #fff;
 }
 
 .container {
@@ -101,8 +121,9 @@ li a {
 .main-content {
   margin-top: 40px;
   padding: opx 25px 25px 25px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #ffffffe6;
+  /* opacity: 0.9; */
+  /* border: 1px solid #ddd; */
 }
 
 hr {
@@ -112,7 +133,10 @@ hr {
 }
 
 .headshot {
-  padding: 0px 25px 0px 0px;
+  margin: 0px 25px 0px 0px;
+  border: 5px solid #00a08d;
+  border-radius: 50%;
+  padding-right: 0px;
 }
 
 .form-control {
